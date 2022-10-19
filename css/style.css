@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/* 
+============
+Global Styles
+============
+ */
+
+ *, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ body{
+    font-family: "Open Sans", sans-serif;
+    background: #f1f5f8;
+    color: #102a42;
+    line-height: 1.5;
+    font-size: 0.875rem;
+ }
+ ul{
+    list-style-type: none;
+ }
+ a{
+    text-decoration: none;
+ }
+
+ /* 
+ =============
+ Navbar
+ =============
+  */
+
+  nav{
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  .nav-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+  }
+  .nav-toggle{
+    font-size: 24px;
+    color: #49a6e9;
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  .nav-toggle:hover{
+    color: #063251;
+    transform: rotate(90deg);
+  }
+  .logo{
+    height: 40px;
+  }
+  .link a{
+    color: #324d67;
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s linear;
+  }
+  .link a:hover{
+    background: #a5d5f8;
+    color: #49a6e9;
+    padding-left: 1.5rem;
+  }
+  .social-icons{
+    display: none;
+  }
+  .link{
+    height: 0;
+    overflow: hidden;
+    transform: all 0.3s linear;
+  }
+  .show-links{
+    height: 10rem;
+  }
+  @media screen and (min-width: 800pc) {
+    .nav-header{
+      padding: 0;
+    }
+    .nav-toggle {
+      display: none;
+    }
+    .link{
+      height: auto;
+      display: flex;
+    }
+    .link a{
+      padding: 0;
+      margin: 0 0.5rem;
+    }
+    .link a:hover {
+      padding: 0;
+      background: transparent;
+    }
+    .social-icons{
+      display: flex;
+    }
+    .social-icons a{
+      margin: 0 0.5rem;
+      color: #49a6e9;
+      transition: #8bcbf9;
+    }
+    .social-icons a:hover{
+      color: #8bcbf9;
+    }
+  }
