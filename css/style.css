@@ -56,7 +56,7 @@ Global Styles
   .logo{
     height: 40px;
   }
-  .link a{
+  .links a{
     color: #324d67;
     font-size: 1rem;
     text-transform: capitalize;
@@ -65,7 +65,7 @@ Global Styles
     padding: 0.5rem 1rem;
     transition: all 0.3s linear;
   }
-  .link a:hover{
+  .links a:hover{
     background: #a5d5f8;
     color: #49a6e9;
     padding-left: 1.5rem;
@@ -73,7 +73,7 @@ Global Styles
   .social-icons{
     display: none;
   }
-  .link{
+  .links{
     height: 0;
     overflow: hidden;
     transform: all 0.3s linear;
@@ -88,15 +88,15 @@ Global Styles
     .nav-toggle {
       display: none;
     }
-    .link{
+    .links{
       height: auto;
       display: flex;
     }
-    .link a{
+    .links a{
       padding: 0;
       margin: 0 0.5rem;
     }
-    .link a:hover {
+    .links a:hover {
       padding: 0;
       background: transparent;
     }
